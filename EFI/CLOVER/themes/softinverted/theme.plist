@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>nerdyjem</string>
+	<key>Description</key>
+	<string>A simple, clean, monochrome theme</string>
+	<key>Theme</key>
+	<dict>
+		<key>Background</key>
+		<dict>
+			<key>Dark</key>
+			<true/>
+			<key>Path</key>
+			<string>background.png</string>
+			<key>Sharp</key>
+			<string>0x00</string>
+			<key>Type</key>
+			<string>Tile</string>
+		</dict>
+		<key>Badges</key>
+		<dict>
+			<key>Inline</key>
+			<false/>
+			<key>OffsetX</key>
+			<integer>100</integer>
+			<key>OffsetY</key>
+			<integer>100</integer>
+			<key>Scale</key>
+			<integer>3</integer>
+			<key>Show</key>
+			<true/>
+			<key>Swap</key>
+			<true/>
+		</dict>
+		<key>Banner</key>
+		<string>banner.png</string>
+		<key>Font</key>
+		<dict>
+			<key>CharWidth</key>
+			<integer>10</integer>
+			<key>Path</key>
+			<string>mpr.png</string>
+			<key>Type</key>
+			<string>Load</string>
+		</dict>
+		<key>Selection</key>
+		<dict>
+			<key>Big</key>
+			<string>selection-big.png</string>
+			<key>ChangeNonSelectedGrey</key>
+			<true/>
+			<key>OnTop</key>
+			<false/>
+			<key>Small</key>
+			<string>selection-small.png</string>
+		</dict>
+	</dict>
+	<key>Year</key>
+	<string>2014</string>
+</dict>
+</plist>
