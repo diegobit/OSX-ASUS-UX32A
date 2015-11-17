@@ -1,4 +1,4 @@
-# Asus UX32A Hackintosh configuration
+# OS X on Asus UX32A
 This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop.
 
 **System:**
