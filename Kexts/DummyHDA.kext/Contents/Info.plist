@@ -89,11 +89,17 @@
 			<array>
 				<dict>
 					<key>AFGLowPowerState</key>
-					<data>AwAAAA==</data>
+					<data>
+					AwAAAA==
+					</data>
 					<key>CodecID</key>
 					<integer>283902569</integer>
 					<key>ConfigData</key>
-					<data>ASccAAEnHQEBJx6gAScfmQFHHBABRx0BAUceFwFHH5kBhxwgAYcdEAGHHoEBhx8CAhccMAIXHRACFx4hAhcfAgFHDAI=</data>
+					<data>
+					ASccAAEnHQEBJx6gAScfmQFHHBABRx0BAUce
+					FwFHH5kBhxwgAYcdEAGHHoEBhx8CAhccMAIX
+					HRACFx4hAhcfAgFHDAI=
+					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
@@ -118,6 +124,8 @@
 		<string>1.7.2a1</string>
 		<key>com.apple.driver.DspFuncLib</key>
 		<string>1.5.2a1</string>
+		<key>com.apple.iokit.IOACPIFamily</key>
+		<string>1.2.0a1</string>
 		<key>com.apple.iokit.IOAudioFamily</key>
 		<string>1.8.6fc11</string>
 		<key>com.apple.iokit.IOGraphicsFamily</key>
@@ -126,6 +134,8 @@
 		<string>1.0.0d1</string>
 		<key>com.apple.iokit.IONDRVSupport</key>
 		<string>2.0</string>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>1.1</string>
 		<key>com.apple.kpi.bsd</key>
 		<string>8.0.0b3</string>
 		<key>com.apple.kpi.iokit</key>
