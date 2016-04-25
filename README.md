@@ -12,13 +12,13 @@ This is a working set of kexts and configurations for running OS X on an ASUS UX
 
 **Status:**
 - Current OS X version: El Capitan 10.11.4
-- Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3368
-- Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports etc...
-- Not working: Card reader; left USB port (devices gets attached to the USB 2.0 bus)
-- Not working (or not tested properly): HDMI, iMessage, Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
+- Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3469
+- Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports etc, HDMI...
+- Not working: Card reader, left USB port (devices gets attached to the USB 2.0 bus), VGA port, iMessage
+- Not working (or not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
 
 **What is inside this repo:**
-- [Clover](http://sourceforge.net/projects/cloverefiboot/) config.plist and drivers
+- [Clover](http://sourceforge.net/projects/cloverefiboot/) config.plist and drivers (please see the "*How to install Clover* section"
 - DSDT and SSDT (SSDT generated with [ssdtPRgen](https://github.com/Piker-Alpha/ssdtPRGen.sh) v13.2: "$ ./ssdtPRgen.sh -x 1 -lfm 900")
 - Various kexts:
   - [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver)
@@ -30,3 +30,8 @@ This is a working set of kexts and configurations for running OS X on an ASUS UX
   - [FakePCIID\*](https://bitbucket.org/RehabMan/os-x-fake-pci-id): to make wifi and USB 3.0 work
   - [FakeSMC](http://www.hwsensors.com): essential to boot OS X; no plugins installed
   - [IntelBacklight](https://bitbucket.org/RehabMan/os-x-intel-backlight): for display backlight
+
+**How to install Clover:**
+- I install Clover with these configuration (sorry for the Italian screenshot):
+![Clover configuration screenshot](/screenshots/cloverConfigurations.png)
+- The drivers included in *EFI/CLOVER/drivers64UEFI* are only the ones *not* bundled with the installer of Clover.
