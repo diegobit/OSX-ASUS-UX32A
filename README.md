@@ -1,7 +1,7 @@
 # OS X on Asus UX32A
 This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop.
 
-**System:**
+### System:
 - UEFI firmware version: 216
 - CPU: Intel i3-3217U
 - GPU: Intel HD4000
@@ -10,14 +10,14 @@ This is a working set of kexts and configurations for running OS X on an ASUS UX
   - Wifi: Broadcom BCM4352 (IDs: 14e4, 43b1)
   - Bluetooth: Broadcom 20702A3 (BCM20702A0) (IDs: 0x3404, 0x13d3)
 
-**Status:**
+### Status:
 - Current OS X version: El Capitan 10.11.4
 - Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3469
 - Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports etc, HDMI...
 - Not working: Card reader, left USB port (devices gets attached to the USB 2.0 bus), VGA port, iMessage
 - Not working (or not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
 
-**What is inside this repo:**
+### What is inside this repo:
 - [Clover](http://sourceforge.net/projects/cloverefiboot/) config.plist and drivers (please see the "*How to install Clover* section"
 - DSDT and SSDT (SSDT generated with [ssdtPRgen](https://github.com/Piker-Alpha/ssdtPRGen.sh) v13.2: "$ ./ssdtPRgen.sh -x 1 -lfm 900")
 - Various kexts:
@@ -31,7 +31,29 @@ This is a working set of kexts and configurations for running OS X on an ASUS UX
   - [FakeSMC](http://www.hwsensors.com): essential to boot OS X; no plugins installed
   - [IntelBacklight](https://bitbucket.org/RehabMan/os-x-intel-backlight): for display backlight
 
-**How to install Clover:**
+### How to install Clover:
+- (The drivers included in *EFI/CLOVER/drivers64UEFI* are only the ones *not* bundled with the installer of Clover)
 - I install Clover with these configuration (sorry for the Italian screenshot):
+
 ![Clover configuration screenshot](/screenshots/cloverConfigurations.png)
-- The drivers included in *EFI/CLOVER/drivers64UEFI* are only the ones *not* bundled with the installer of Clover.
+
+
+### Current trackpad gestures ([ApplePS2SmartTouchPad](http://forum.osxlatitude.com/index.php?/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver-mac-os-x/)):
+
+| Gesture       | details                   | Action                                  |
+| ------------- | ------------------------- | --------------------------------------- |
+| *Tap*         | Two fingers               | Right mouse click                       |
+|               | Three fingers             | Middle mouse click                      |
+|               | Four fingers              | Show desktop                            |
+|               | Five fingers              | Launchpad                               |
+| *Click*       | One finger everywhere     | Left mouse click                        |
+| *Swipe*       | Two fingers               | Scrolling                               |
+|               | Three fingers left/right  | Desktop switch                          |
+|               | Three fingers up					|	Mission control                         |
+|               | Three fingers down				|	App window list                         |
+|               | Four fingers up					  | Fullscreen                              |
+|               | Four fingers down				  | SHIFT CMD T ("Show all tabs" in Safari) |
+|               | Four fingers left/right		| Go back/forward (histories)             |
+| *Pinch*       | Four fingers in           | Mission Control                         |
+| *Long tap*    | Three fingers             | CMD W (close window)                    |
+|               | Four fingers			        |	Force close apps window                 |
