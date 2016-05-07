@@ -24,7 +24,7 @@ This is a working set of kexts and configurations for running OS X on an ASUS UX
   - [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver)
   - [ApplePS2SmartTouchPad](http://forum.osxlatitude.com/index.php?/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver-mac-os-x/): touchpad and keyboard (this is set to ISO and italian keyboard layout)
   - [AsusNBFnKeys](http://forum.osxlatitude.com/index.php?/topic/1968-fn-hotkey-and-als-sensor-driver-for-asus-notebooks/)
-  - [Brcm\*](https://bitbucket.org/RehabMan/os-x-brcmpatchram): bluetooth
+  - [Brcm\*](https://bitbucket.org/RehabMan/os-x-brcmpatchram): bluetooth (If you have a different wireless card download *BrcmFirmwareRepo.kext* from the official repo, NOT from here, because this one only works on this wireless card)
   - DummyHDA: to use Apple's audio driver
   - [EAPDFix](http://forum.osxlatitude.com/index.php?/topic/3084-eapdjack-sense-fix-no-audiojack-sense-issue-after-sleep/): to fix audio after sleep
   - [FakePCIID\*](https://bitbucket.org/RehabMan/os-x-fake-pci-id): to make wifi and USB 3.0 work

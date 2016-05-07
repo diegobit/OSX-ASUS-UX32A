@@ -1473,7 +1473,7 @@
 			<key>DisplayName</key>
 			<string>Bluetooth Module</string>
 			<key>FirmwareKey</key>
-			<string>BCM20702A1_001.002.014.1443.1479_v5575</string>
+			<string>BCM20702A1_001.002.014.1502.1771_v5867</string>
 			<key>IOClass</key>
 			<string>BrcmPatchRAM2</string>
 			<key>IOMatchCategory</key>
