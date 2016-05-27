@@ -11,8 +11,8 @@ This is a working set of kexts and configurations for running OS X on an ASUS UX
   - Bluetooth: Broadcom 20702A3 (BCM20702A0) (IDs: 0x3404, 0x13d3)
 
 ### Status:
-- Current OS X version: El Capitan 10.11.4
-- Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3504 (latest tested version)
+- Current OS X version: El Capitan 10.11.5
+- Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3543 (latest tested version)
 - Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports etc, HDMI...
 - Not working: Card reader, left USB port (devices gets attached to the USB 2.0 bus), VGA port, iMessage
 - Not working (or not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
