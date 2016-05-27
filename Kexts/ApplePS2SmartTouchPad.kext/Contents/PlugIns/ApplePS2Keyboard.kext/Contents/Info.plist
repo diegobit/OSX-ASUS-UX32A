@@ -121,11 +121,11 @@
 				<key>MediaPrevious</key>
 				<string>disable</string>
 				<key>Misson Control</key>
-				<string>disable</string>
+				<string>F1</string>
 				<key>SleepDisplay</key>
 				<string>F7</string>
 				<key>SystemSleep</key>
-				<string>F1</string>
+				<string>disable</string>
 				<key>Touchpad</key>
 				<string>F9</string>
 				<key>VideoMirror</key>

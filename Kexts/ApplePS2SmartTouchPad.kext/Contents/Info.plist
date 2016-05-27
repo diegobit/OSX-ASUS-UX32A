@@ -1187,7 +1187,7 @@
 						<key>EdgeScrollAccelMode</key>
 						<integer>0</integer>
 						<key>EdgeScrolling</key>
-						<true/>
+						<false/>
 						<key>EdgeVScrollAdaptArea</key>
 						<integer>3</integer>
 						<key>EdgeVScrollArea</key>
