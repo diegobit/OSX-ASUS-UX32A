@@ -13,8 +13,8 @@ This is a working set of kexts and configurations for running OS X on an ASUS UX
 ### Status:
 - Current OS X version: El Capitan 10.11.5
 - Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3543 (latest tested version)
-- Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports etc, HDMI...
-- Not working: Card reader, left USB port (devices gets attached to the USB 2.0 bus), VGA port, iMessage
+- Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports [^1](Android File Transfer causes MANY problems with USB ports. Remove it or google how to stop its launch at system boot.), HDMI...
+- Not working: Card reader, VGA port, iMessage
 - Not working (or not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
 
 ### What is inside this repo:
