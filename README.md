@@ -28,7 +28,7 @@ This is a working set of kexts and configurations for running OS X on an ASUS UX
   - DummyHDA: to use Apple's audio driver
   - [EAPDFix](http://forum.osxlatitude.com/index.php?/topic/3084-eapdjack-sense-fix-no-audiojack-sense-issue-after-sleep/): to fix audio after sleep
   - [FakePCIID\*](https://bitbucket.org/RehabMan/os-x-fake-pci-id): to make wifi and USB 3.0 work
-  - [FakeSMC](http://www.hwsensors.com): essential to boot OS X; no plugins installed
+  - [FakeSMC](http://www.hwsensors.com): essential to boot OS X; no plugins installed. I added a key (*ACID*) to its Info.plist to fix this: https://github.com/RehabMan/OS-X-ACPI-Battery-Driver/issues/8
   - [IntelBacklight](https://bitbucket.org/RehabMan/os-x-intel-backlight): for display backlight
 
 ### How to install Clover:
