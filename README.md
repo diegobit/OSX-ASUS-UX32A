@@ -2,6 +2,7 @@
 This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop. This repo is aimed at already booting systems, I installed OS X a long time ago and I don't remember the problems occurred to me. [Here](http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/)'s a good All-in-one guide.
 
 ### System information
+- Model: UX32A-R3028H
 - UEFI firmware version: 216
 - CPU: Intel i3-3217U
 - GPU: Intel HD4000
