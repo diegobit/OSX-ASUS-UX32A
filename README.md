@@ -1,25 +1,26 @@
 # OS X on Asus UX32A
-This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop. This repo is aimed at already booting systems, I installed OS X a long time ago and I don't remember the problems occurred to me. [Here]((http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/))'s a good All-in-one guide.
+This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop. This repo is aimed at already booting systems, I installed OS X a long time ago and I don't remember the problems occurred to me. [Here](http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/)'s a good All-in-one guide.
 
-### System:
+### System information
 - UEFI firmware version: 216
 - CPU: Intel i3-3217U
 - GPU: Intel HD4000
 - Audio: ALC269VB (Device: 0x80861E20, CodecID: 0x10EC0269)
-- Wireless chip: Azurewave aw-ce123h:
+- Wireless chip: Azurewave aw-ce123h (the original wireless card doesn't work, it *must* be replaced):
   - Wifi: Broadcom BCM4352 (IDs: 14e4, 43b1)
   - Bluetooth: Broadcom 20702A3 (BCM20702A0) (IDs: 0x3404, 0x13d3)
 
-To check system informations: preinstalled system profiler, DCPImanager or IORegistryExplorer. 
+Some detailed system information gathered from Linux: [System Hardware/](https://github.com/diegobit/OSX-ASUS-UX32A/tree/master/System%20Hardware).
+You can also check under OS X with the preinstalled System Information.app, DCPImanager or IORegistryExplorer. 
 
-### Status:
+### Status
 - Current OS X version: El Capitan 10.11.5
 - Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3577 (latest tested version)
 - Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports<sup>1</sup>, HDMI...
 - Not working: Card reader, VGA port, iMessage
 - Not working (or not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
 
-### What is inside this repo:
+### What's inside this repo
 - [Clover](http://sourceforge.net/projects/cloverefiboot/) config.plist and drivers (please see the "*How to install Clover* section"
 - DSDT and SSDT (SSDT generated with [ssdtPRgen](https://github.com/Piker-Alpha/ssdtPRGen.sh) v13.2: "$ ./ssdtPRgen.sh -x 1 -lfm 900")
 - Various kexts:
@@ -33,14 +34,14 @@ To check system informations: preinstalled system profiler, DCPImanager or IOReg
   - [FakeSMC](http://www.hwsensors.com): essential to boot OS X; no plugins installed. I added a key (*ACID*) to its Info.plist to fix this: https://github.com/RehabMan/OS-X-ACPI-Battery-Driver/issues/8
   - [IntelBacklight](https://bitbucket.org/RehabMan/os-x-intel-backlight): for display backlight
 
-### How to install Clover:
+### How to install Clover
 - (The drivers included in *EFI/CLOVER/drivers64UEFI* are only the ones *not* bundled with the installer of Clover)
 - I install Clover with these configuration (sorry for the Italian screenshot):
 
 ![Clover configuration screenshot](/screenshots/cloverConfigurations.png)
 
 
-### Current trackpad gestures ([ApplePS2SmartTouchPad](http://forum.osxlatitude.com/index.php?/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver-mac-os-x/)):
+### Current trackpad gestures ([ApplePS2SmartTouchPad](http://forum.osxlatitude.com/index.php?/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver-mac-os-x/))
 
 | Gesture       | details                   | Action                                  |
 | ------------- | ------------------------- | --------------------------------------- |
