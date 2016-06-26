@@ -1,18 +1,20 @@
 # OS X on Asus UX32A
-This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop.
+This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop. This repo is aimed at already booting systems, I installed OS X a long time ago and I don't remember the problems occurred to me. [Here]((http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/))'s a good All-in-one guide.
 
 ### System:
 - UEFI firmware version: 216
 - CPU: Intel i3-3217U
 - GPU: Intel HD4000
-- Audio: ALC269VB
+- Audio: ALC269VB (Device: 0x80861E20, CodecID: 0x10EC0269)
 - Wireless chip: Azurewave aw-ce123h:
   - Wifi: Broadcom BCM4352 (IDs: 14e4, 43b1)
   - Bluetooth: Broadcom 20702A3 (BCM20702A0) (IDs: 0x3404, 0x13d3)
 
+To check system informations: preinstalled system profiler, DCPImanager or IORegistryExplorer. 
+
 ### Status:
 - Current OS X version: El Capitan 10.11.5
-- Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3543 (latest tested version)
+- Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3577 (latest tested version)
 - Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports<sup>1</sup>, HDMI...
 - Not working: Card reader, VGA port, iMessage
 - Not working (or not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
@@ -25,8 +27,8 @@ This is a working set of kexts and configurations for running OS X on an ASUS UX
   - [ApplePS2SmartTouchPad](http://forum.osxlatitude.com/index.php?/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver-mac-os-x/): touchpad and keyboard (this is set to ISO and italian keyboard layout)
   - [AsusNBFnKeys](http://forum.osxlatitude.com/index.php?/topic/1968-fn-hotkey-and-als-sensor-driver-for-asus-notebooks/)
   - [Brcm\*](https://bitbucket.org/RehabMan/os-x-brcmpatchram): bluetooth (If you have a different wireless card download *BrcmFirmwareRepo.kext* from the official repo, NOT from here, because this one only works on this wireless card)
-  - DummyHDA: to use Apple's audio driver
-  - [EAPDFix](http://forum.osxlatitude.com/index.php?/topic/3084-eapdjack-sense-fix-no-audiojack-sense-issue-after-sleep/): to fix audio after sleep
+  - DummyHDA: to use Apple's audio driver (If you have issues: a [complete Audio guide](http://forum.osxlatitude.com/index.php?/topic/1946-complete-applehda-patching-guide/), a [very good automatic patcher](http://www.insanelymac.com/forum/files/file/496-applehda-patcher/))
+  - [EAPDFix](http://forum.osxlatitude.com/index.php?/topic/3084-eapdjack-sense-fix-no-audiojack-sense-issue-after-sleep/): to fix audio after sleep. As an alternative, try [CodecCommander](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/overview)
   - [FakePCIID\*](https://bitbucket.org/RehabMan/os-x-fake-pci-id): to make wifi and USB 3.0 work
   - [FakeSMC](http://www.hwsensors.com): essential to boot OS X; no plugins installed. I added a key (*ACID*) to its Info.plist to fix this: https://github.com/RehabMan/OS-X-ACPI-Battery-Driver/issues/8
   - [IntelBacklight](https://bitbucket.org/RehabMan/os-x-intel-backlight): for display backlight
