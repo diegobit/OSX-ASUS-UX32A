@@ -1,5 +1,5 @@
 # OS X on Asus UX32A
-This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop. This repo is aimed at already booting systems, I installed OS X a long time ago and I don't remember the problems occurred to me. [Here](http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/)'s a good All-in-one guide.
+This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop. The purpose of this repo is to help improving an already booting system, not to help installing it: I have OS X for some time, so and I don't remember the problems occurred to me during the installation. [Here](http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/)'s a good All-in-one guide and [here](http://www.insanelymac.com/forum/forum/137-osx86-installation/)'s a specialized forum.
 
 ### System information
 - Model: UX32A-R3028H
@@ -12,11 +12,11 @@ This is a working set of kexts and configurations for running OS X on an ASUS UX
   - Bluetooth: Broadcom 20702A3 (BCM20702A0) (IDs: 0x3404, 0x13d3)
 
 Some detailed system information gathered from Linux: [System Hardware/](https://github.com/diegobit/OSX-ASUS-UX32A/tree/master/System%20Hardware).
-You can also check under OS X with the preinstalled System Information.app, DCPImanager or IORegistryExplorer. 
+You can also check under OS X with the preinstalled System Information.app, DCPImanager or IORegistryExplorer.
 
 ### Status
 - Current OS X version: El Capitan 10.11.5
-- Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3577 (latest tested version)
+- Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI v3599 (latest tested version)
 - Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports<sup>1</sup>, HDMI...
 - Not working: Card reader, VGA port, iMessage
 - Not working (or not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
