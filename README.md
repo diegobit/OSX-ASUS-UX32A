@@ -39,7 +39,7 @@ You can also check under OS X with the preinstalled System Information.app, DCPI
 - (The drivers included in *EFI/CLOVER/drivers64UEFI* are only the ones *not* bundled with the installer of Clover)
 - I install Clover with these configuration (sorry for the Italian screenshot):
 
-![Clover configuration screenshot](/screenshots/cloverConfigurations.png)
+![Clover configuration screenshot](/screenshots/clover-setup-info.png)
 
 
 ### Current trackpad gestures ([ApplePS2SmartTouchPad](http://forum.osxlatitude.com/index.php?/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver-mac-os-x/))
