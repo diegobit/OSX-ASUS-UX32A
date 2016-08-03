@@ -169,20 +169,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>External icons patch</string>
-				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
-				<key>Name</key>
-				<string>AppleAHCIPort</string>
-				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>TRIM Enabler</string>
 				<key>Find</key>
 				<data>
