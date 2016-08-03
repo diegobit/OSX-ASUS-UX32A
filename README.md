@@ -17,8 +17,8 @@ You can also check under OS X with the preinstalled System Information.app, DCPI
 ### Status
 - Current OS X version: El Capitan 10.11.6
 - Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI
-- Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports<sup>1</sup>, HDMI...
-- Not working: Card reader, HDMI audio, VGA port, iMessage
+- Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports<sup>1</sup>, HDMI, HDMI audio...
+- Not working: Card reader, VGA port, iMessage
 - Not working (or not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
 
 ### What's inside this repo
