@@ -22,7 +22,7 @@ You can also check under OS X with the preinstalled System Information.app, DCPI
 - Not working (or not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
 
 ### What's inside this repo
-- [Clover](http://sourceforge.net/projects/cloverefiboot/) config.plist and drivers (please see the "*How to install Clover* section"
+- [Clover](http://sourceforge.net/projects/cloverefiboot/) config.plist and drivers (see section *How to install Clover*)
 - DSDT and SSDT (SSDT generated with [ssdtPRgen](https://github.com/Piker-Alpha/ssdtPRGen.sh) v13.2: "$ ./ssdtPRgen.sh -x 1 -lfm 900")
 - Various kexts:
   - [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver)
