@@ -37,7 +37,7 @@ You can also check under OS X with the preinstalled System Information.app, DCPI
 
 ### How to install Clover
 - (The drivers included in *EFI/CLOVER/drivers64UEFI* are only the ones *not* bundled with the installer of Clover)
-- I install Clover with these configuration (sorry for the Italian screenshot):
+- I install Clover with these configuration:
 
 ![Clover configuration screenshot](/screenshots/clover-setup-info.png)
 
