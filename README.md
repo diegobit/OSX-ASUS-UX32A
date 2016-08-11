@@ -62,6 +62,9 @@ You can also check under OS X with the preinstalled System Information.app, DCPI
 | *Long tap*    | Three fingers             | CMD W (close window)                    |
 |               | Four fingers			        |	Force close apps window                 |
 
+### Acknowledgements
+Clover theme *softinverted*: https://girlintroverted.me/clover-themes/
+
 ---
 
 **1:** *In this repo I said the left port didn't work, it was Android File Transfer's fault. It causes MANY problems with USB ports.
