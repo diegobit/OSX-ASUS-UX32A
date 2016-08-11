@@ -64,4 +64,4 @@ You can also check under OS X with the preinstalled System Information.app, DCPI
 
 ---
 
-**1:** *In this repo I said the left port didn't work, it was Android File Transfer fault. It causes MANY problems with USB ports.
+**1:** *In this repo I said the left port didn't work, it was Android File Transfer's fault. It causes MANY problems with USB ports.
