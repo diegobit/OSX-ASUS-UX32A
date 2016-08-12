@@ -62,8 +62,10 @@ You can also check under OS X with the preinstalled System Information.app, DCPI
 | *Long tap*    | Three fingers             | CMD W (close window)                    |
 |               | Four fingers			        |	Force close apps window                 |
 
-### Acknowledgements
-Clover theme *softinverted*: https://girlintroverted.me/clover-themes/
+### Clover theme: *Soft (inverted)*
+(Based on the one by *nerdyjem*: https://girlintroverted.me/clover-themes/)
+
+![softinverted screenshot](/EFI/CLOVER/themes/softinverted/screenshot.png)
 
 ---
 
