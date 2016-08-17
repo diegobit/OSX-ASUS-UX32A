@@ -1,5 +1,7 @@
 # OS X on Asus UX32A
-This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop. The purpose of this repo is to help improving an already booting system, not to help installing it: I have OS X for some time, so and I don't remember the problems occurred to me during the installation. [Here](http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/)'s a good All-in-one guide and [here](http://www.insanelymac.com/forum/forum/137-osx86-installation/)'s a specialized forum.
+This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop. 
+
+The purpose of this repo is to help improving an already booting system, not to help installing it: I have OS X for a long time, so I don't remember the problems I faced during installation. [Here](http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/)'s a good All-in-one guide and [here](http://www.insanelymac.com/forum/forum/137-osx86-installation/)'s a specialized forum.
 
 ### System information
 - Model: UX32A-R3028H
