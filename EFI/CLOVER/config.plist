@@ -61,6 +61,8 @@
 		<dict>
 			<key>DropOem</key>
 			<string>NO</string>
+			<key>EnableC6</key>
+			<false/>
 			<key>Generate</key>
 			<false/>
 		</dict>
@@ -68,7 +70,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>darkwake=0 -xcpm</string>
+		<string>darkwake=0</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -121,6 +123,8 @@
 			<true/>
 			<key>Legacy</key>
 			<false/>
+			<key>Linux</key>
+			<true/>
 			<key>Tool</key>
 			<true/>
 		</dict>
@@ -144,7 +148,7 @@
 		<key>AppleRTC</key>
 		<true/>
 		<key>AsusAICPUPM</key>
-		<false/>
+		<true/>
 		<key>Debug</key>
 		<false/>
 		<key>KernelCpu</key>
@@ -225,16 +229,18 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Second Stage Boot</string>
+				<string>Second Stage patch 10.12</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
-				AQAAdRc=
+				AQAAdSU=
 				</data>
 				<key>Name</key>
 				<string>IOGraphicsFamily</string>
 				<key>Replace</key>
 				<data>
-				AQAA6xc=
+				AQAA6yU=
 				</data>
 			</dict>
 			<dict>
@@ -263,6 +269,22 @@
 				<key>Replace</key>
 				<data>
 				axAAAJCQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AirPortBrcm4360 - fcvo (http://www.insanelymac.com/forum/topic/312759-fix-macos-sierra-dp1-bcm94532z-wifi/)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gflSqgAAdSk=
+				</data>
+				<key>Name</key>
+				<string>AirPortBrcm4360</string>
+				<key>Replace</key>
+				<data>
+				gflSqgAAZpA=
 				</data>
 			</dict>
 			<dict>
@@ -326,7 +348,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>

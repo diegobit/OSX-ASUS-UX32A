@@ -1,5 +1,5 @@
 # OS X on Asus UX32A
-This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop. 
+This is a working set of kexts and configurations for running OS X on an ASUS UX32A laptop.
 
 The purpose of this repo is to help improving an already booting system, not to help installing it: I have OS X for a long time, so I don't remember the problems I faced during installation. [Here](http://www.insanelymac.com/forum/topic/298027-guide-aio-guides-for-hackintosh/)'s a good All-in-one guide and [here](http://www.insanelymac.com/forum/forum/137-osx86-installation/)'s a specialized forum.
 
@@ -19,13 +19,13 @@ You can also check under OS X with the preinstalled System Information.app, DCPI
 ### Status
 - Current OS X version: El Capitan 10.11.6
 - Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI
-- Working: CPU steps, sleep, audio, wifi, bluetooth, multitouch, FN keys, USB ports<sup>1</sup>, HDMI, HDMI audio...
-- Not working: Card reader, VGA port, iMessage
-- Not working (or not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
+- Working: CPU steps, sleep, audio, wifi, bluetooth, USB ports<sup>1</sup>, HDMI, HDMI audio...
+- Not working: Card reader, VGA port, iMessage, multitouch, FN keys, USB extra current, XCPM power management
+- Not working (not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
 
 ### What's inside this repo
 - [Clover](http://sourceforge.net/projects/cloverefiboot/) config.plist and drivers (see section *How to install Clover*)
-- DSDT and SSDT (SSDT generated with [ssdtPRgen](https://github.com/Piker-Alpha/ssdtPRGen.sh) v13.2: "$ ./ssdtPRgen.sh -x 1 -lfm 900")
+- DSDT and SSDT (SSDT generated with [ssdtPRgen](https://github.com/Piker-Alpha/ssdtPRGen.sh) v15.6: `ssdtPRgen.sh -lfm 900`. When XCPM will be working again I'll return to the one generated with v13.2: `$ ./ssdtPRgen.sh -x 1 -lfm 900`)
 - Various kexts:
   - [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver)
   - [ApplePS2SmartTouchPad](http://forum.osxlatitude.com/index.php?/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver-mac-os-x/): touchpad and keyboard (this is set to ISO and italian keyboard layout)
