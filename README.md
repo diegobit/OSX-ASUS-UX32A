@@ -19,7 +19,7 @@ You can also check under OS X with the preinstalled System Information.app, DCPI
 ### Status
 - Current OS X version: El Capitan 10.11.6
 - Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI
-- Working: CPU steps, sleep, audio, wifi, bluetooth, USB ports<sup>1</sup>, HDMI, HDMI audio...
+- Working: CPU steps, sleep, audio, wifi, bluetooth, USB ports<sup>1</sup>, HDMI, HDMI audio, iTunes DRM playback...
 - Not working: Card reader, VGA port, iMessage, multitouch, FN keys, USB extra current, XCPM power management
 - Not working (not tested properly): Handoff, Instant Hotspot (even though in the bluetooth info section of OS X these are "ON"), hibernation
 
@@ -36,6 +36,7 @@ You can also check under OS X with the preinstalled System Information.app, DCPI
   - [FakePCIID\*](https://bitbucket.org/RehabMan/os-x-fake-pci-id): to make wifi and USB 3.0 work
   - [FakeSMC](http://www.hwsensors.com): essential to boot OS X; no plugins installed. I added a key (*ACID*) to its Info.plist to fix this: https://github.com/RehabMan/OS-X-ACPI-Battery-Driver/issues/8
   - [IntelBacklight](https://bitbucket.org/RehabMan/os-x-intel-backlight): for display backlight
+  - [Shiki](https://github.com/vit9696/Shiki): to enable iTunes DRM playback
 
 ### How to install Clover
 - (The drivers included in *EFI/CLOVER/drivers64UEFI* are only the ones *not* bundled with the installer of Clover)
