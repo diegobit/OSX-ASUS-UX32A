@@ -26,6 +26,7 @@ You can also check under macOS with the preinstalled System Information.app, DCP
     - XCPM power management ([this](https://pikeralpha.wordpress.com/2016/07/26/xcpm-for-unsupported-processor/) guide should fix it)
     - Caps-lock key [It could be a Sierra bug]
     - ISO choice not working (keys `<` and `\` swapped)
+    - Display prefpane
 - Not working: Card reader, VGA port, iMessage, Handoff, Instant Hotspot (even though in the bluetooth info section of macOS these are "ON"), hibernation
 
 ### What's inside this repo
