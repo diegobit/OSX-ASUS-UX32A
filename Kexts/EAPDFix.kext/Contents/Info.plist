@@ -66,17 +66,30 @@
 			<key>Preferences</key>
 			<dict>
 				<key>BootFixDelay</key>
-				<integer>30000</integer>
+				<integer>1000</integer>
 				<key>CodecAddress</key>
 				<integer>0</integer>
 				<key>FixType</key>
 				<integer>1</integer>
 				<key>HDEFAddress</key>
-				<string>1B</string>
+				<array>
+					<string>1B</string>
+					<string>1F,3</string>
+					<string>8</string>
+				</array>
 				<key>JackSenseFix</key>
 				<false/>
+				<key>ResetCodec</key>
+				<dict>
+					<key>AfterInterruptedSleep</key>
+					<true/>
+					<key>AfterSystemSleep</key>
+					<true/>
+					<key>AtSystemBoot</key>
+					<false/>
+				</dict>
 				<key>SkipBootBgCheck</key>
-				<true/>
+				<false/>
 				<key>SleepFixDelay</key>
 				<integer>1500</integer>
 				<key>StatusCheckInterval</key>
@@ -101,10 +114,6 @@
 	<string>Copyright © EMlyDinEsH (mg-dinesh@live.com) 2013-2016. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>com.apple.driver.AppleHDAController</key>
-		<string>1.0.0d1</string>
-		<key>com.apple.iokit.IOAudioFamily</key>
-		<string>1.1fc9</string>
 		<key>com.apple.iokit.IOHIDSystem</key>
 		<string>1.6.5</string>
 		<key>com.apple.kpi.bsd</key>
