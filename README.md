@@ -21,9 +21,11 @@ You can also check under macOS with the preinstalled System Information.app, DCP
 - Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI
 - Working: CPU steps, sleep, audio, wifi, bluetooth, USB ports<sup>1</sup>, HDMI, HDMI audio, iTunes DRM playback (you need to manually say to Clover "Inject Kexts" during each boot, the *InjectKext* option in config.plist doesn't work)...
 - *Not working in Sierra:*
-    - multitouch, FN keys (latest update of the respective kext didn't help)
+    - some multitouch gestures, FN keys [it is a Sierra bug fixed in 10.12.1 betas]
     - USB extra current
     - XCPM power management ([this](https://pikeralpha.wordpress.com/2016/07/26/xcpm-for-unsupported-processor/) guide should fix it)
+    - Caps-lock key [It could be a Sierra bug]
+    - ISO choice not working (keys `<` and `\` swapped)
 - Not working: Card reader, VGA port, iMessage, Handoff, Instant Hotspot (even though in the bluetooth info section of macOS these are "ON"), hibernation
 
 ### What's inside this repo
