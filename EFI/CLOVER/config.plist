@@ -85,6 +85,8 @@
 		<false/>
 		<key>Timeout</key>
 		<integer>3</integer>
+		<key>XMPDetection</key>
+		<true/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -142,6 +144,8 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
+		<key>InjectEDID</key>
+		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>

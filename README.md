@@ -17,15 +17,15 @@ Some detailed system information gathered from Linux: [System Hardware/](https:/
 You can also check under macOS with the preinstalled System Information.app, DCPImanager or IORegistryExplorer.
 
 ### Status
-- Current macOS version: Sierra 10.12 Beta
+- Current macOS version: Sierra 10.12.1
 - Bootloader: [Clover](http://sourceforge.net/projects/cloverefiboot/) EFI
 - Working: CPU steps, sleep, audio, wifi, bluetooth, USB ports<sup>1</sup>, HDMI, HDMI audio, iTunes DRM playback (you need to manually say to Clover "Inject Kexts" during each boot, the *InjectKext* option in config.plist doesn't work)...
 - *Not working in Sierra:*
-    - some multitouch gestures, FN keys [it is a Sierra bug fixed in 10.12.1 betas]
+    - some multitouch gestures
     - USB extra current
-    - XCPM power management ([this](https://pikeralpha.wordpress.com/2016/07/26/xcpm-for-unsupported-processor/) guide should fix it)
+    - XCPM power management ([this](https://pikeralpha.wordpress.com/2016/07/26/xcpm-for-unsupported-processor/) guide might fix it)
     - Caps-lock key [It could be a Sierra bug]
-    - ISO choice not working (keys `<` and `\` swapped)
+    - ISO choice not working (keys `<` and `\` swapped) (use karabiner-elements)
     - Display prefpane
 - Not working: Card reader, VGA port, iMessage, Handoff, Instant Hotspot (even though in the bluetooth info section of macOS these are "ON"), hibernation
 
@@ -36,7 +36,7 @@ You can also check under macOS with the preinstalled System Information.app, DCP
   - [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver)
   - [ApplePS2SmartTouchPad](http://forum.osxlatitude.com/index.php?/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver-mac-os-x/): touchpad and keyboard (this is set to ISO and italian keyboard layout)
   - [AsusNBFnKeys](http://forum.osxlatitude.com/index.php?/topic/1968-fn-hotkey-and-als-sensor-driver-for-asus-notebooks/)
-  - [Brcm\*](https://bitbucket.org/RehabMan/os-x-brcmpatchram): bluetooth (If you have a different wireless card download *BrcmFirmwareRepo.kext* from the official repo, NOT from here, because this one only works on this wireless card)
+  - [BTFirmwareUploader](http://forum.osxlatitude.com/index.php?/topic/2925-bluetooth-firmware-uploader/): bluetooth (it seems to work better than [BrcmPatchRAM](https://bitbucket.org/RehabMan/os-x-brcmpatchram) (If you have a different wireless card download *BrcmFirmwareRepo.kext* from the official repo, NOT from here, because this one only works on this wireless card)).
   - DummyHDA: to use Apple's audio driver (If you have issues: a [complete Audio guide](http://forum.osxlatitude.com/index.php?/topic/1946-complete-applehda-patching-guide/), a [very good automatic patcher](http://www.insanelymac.com/forum/files/file/496-applehda-patcher/))
   - [EAPDFix](http://forum.osxlatitude.com/index.php?/topic/3084-eapdjack-sense-fix-no-audiojack-sense-issue-after-sleep/): to fix audio after sleep. As an alternative, try [CodecCommander](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/overview)
   - [FakePCIID\*](https://bitbucket.org/RehabMan/os-x-fake-pci-id): to make wifi and USB 3.0 work
