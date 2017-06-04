@@ -22,7 +22,7 @@ You can also check under macOS with the preinstalled System Information.app, DCP
 - Working: CPU steps, sleep, audio, wifi, bluetooth, USB ports<sup>1</sup>, HDMI, HDMI audio, iTunes DRM playback (you need to manually say to Clover "Inject Kexts" during each boot, the *InjectKext* option in config.plist doesn't work)...
 - *Not working in Sierra:*
     - some multitouch gestures
-    - USB extra current
+    - USB extra current (I get a maximum of 1A with an iPhone. [Possible fix](https://www.tonymacx86.com/threads/guide-usb-power-property-injection-for-sierra.222266/))
     - XCPM power management ([this](https://pikeralpha.wordpress.com/2016/07/26/xcpm-for-unsupported-processor/) guide might fix it)
     - Caps-lock key [It could be a Sierra bug]
     - ISO choice not working (keys `<` and `\` swapped) (use karabiner-elements)
